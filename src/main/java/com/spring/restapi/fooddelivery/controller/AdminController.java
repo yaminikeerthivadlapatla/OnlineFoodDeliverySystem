@@ -50,7 +50,7 @@ public class AdminController {
         return adminService.signIn(signInDto);
     }
     
-  /* @PostMapping("/updateFoodItem")
+   @PostMapping("/updateFoodItem")
    public ResponseDto updateFoodItem(@RequestParam("token") String token, @RequestBody FoodItemUpdateDto fooditemUpdateDto) {
    authenticationService.authenticate(token);
     return adminService.updateFoodItem(token, fooditemUpdateDto);
@@ -60,5 +60,5 @@ public class AdminController {
    public ResponseDto deleteFoodItem(@RequestParam("token") String token, @RequestBody FoodItemDeleteDto fooditemDeleteDto) {
    authenticationService.authenticate(token);
     return adminService.deleteFoodItem(token, fooditemDeleteDto);
-   }*/
+   }
 }
